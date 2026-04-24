@@ -1,0 +1,151 @@
+/* HEADER */
+.header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #eee;
+
+  /* animação entrada */
+  animation: fadeDown 0.6s ease;
+}
+
+/* animação */
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* CONTAINER */
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 18px 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* LOGO */
+.logo {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2e2e2e;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.logo span {
+  color: #3f6b3f;
+}
+
+/* hover logo */
+.logo:hover {
+  opacity: 0.7;
+}
+
+/* NAV */
+.nav {
+  display: flex;
+  gap: 30px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #6d6d6d;
+  font-size: 14px;
+  transition: 0.3s;
+  position: relative;
+}
+
+/* HOVER LINHA */
+.nav a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background: #3f6b3f;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  color: #2e2e2e;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+/* BOTÃO */
+.header-actions button {
+  background: linear-gradient(135deg, #3f6b3f, #5a8a5a);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 5px 15px rgba(63, 107, 63, 0.2);
+}
+
+.header-actions button:hover {
+  background: linear-gradient(135deg, #2f4f2f, #3f6b3f);
+  transform: translateY(-2px);
+}
+
+/* ===================== RESPONSIVO ===================== */
+
+/* TABLET */
+@media (max-width: 900px) {
+  .header-container {
+    padding: 15px 20px;
+  }
+
+  .nav {
+    gap: 20px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 800px) {
+  .nav {
+    display: none;
+  }
+
+  .header-container {
+    justify-content: space-between;
+  }
+
+  .header-actions button {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+}
+
+/* MOBILE PEQUENO */
+@media (max-width: 500px) {
+  .logo {
+    font-size: 18px;
+  }
+
+  .header-container {
+    padding: 12px 15px;
+  }
+
+  .header-actions button {
+    padding: 7px 14px;
+    font-size: 11px;
+  }
+}

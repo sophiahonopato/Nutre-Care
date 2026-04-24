@@ -1,0 +1,139 @@
+.embalagens {
+  padding: 100px 20px;
+  background: #ffffff;
+
+  /* animação da section */
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUpEmb 0.8s ease forwards;
+}
+
+.embalagens-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* TOPO */
+.embalagens-top {
+  text-align: center;
+  margin-bottom: 60px;
+
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeTextEmb 0.8s ease 0.2s forwards;
+}
+
+.embalagens-top h2 {
+  font-size: 34px;
+  margin-bottom: 10px;
+  color: #2e2e2e;
+}
+
+.embalagens-top p {
+  color: #7a7a7a;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* GRID */
+.embalagens-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* CARD */
+.emb-card {
+  text-align: center;
+  transition: 0.3s;
+
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUpEmb 0.6s ease forwards;
+}
+
+/* delay cards */
+.emb-card:nth-child(1) { animation-delay: 0.2s; }
+.emb-card:nth-child(2) { animation-delay: 0.3s; }
+.emb-card:nth-child(3) { animation-delay: 0.4s; }
+
+/* IMAGEM */
+.emb-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  transition: 0.4s;
+}
+
+/* HOVER */
+.emb-card:hover img {
+  transform: scale(1.06);
+}
+
+/* TEXTO */
+.emb-card h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #3f6b3f;
+}
+
+.emb-card p {
+  font-size: 14px;
+  color: #6d6d6d;
+}
+
+/* ===================== ANIMAÇÕES ===================== */
+
+@keyframes fadeUpEmb {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeTextEmb {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===================== RESPONSIVO ===================== */
+
+/* TABLET */
+@media (max-width: 1024px) {
+  .embalagens-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .embalagens-top h2 {
+    font-size: 30px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .embalagens {
+    padding: 60px 15px;
+  }
+
+  .embalagens-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .emb-card img {
+    height: 220px;
+  }
+
+  .embalagens-top h2 {
+    font-size: 24px;
+  }
+
+  .embalagens-top p {
+    font-size: 14px;
+  }
+}

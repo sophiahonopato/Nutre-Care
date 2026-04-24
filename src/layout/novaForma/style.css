@@ -1,0 +1,148 @@
+.banner {
+  width: 100%;
+  height: 500px;
+
+  margin-top: 80px;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+
+  /* animação */
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUpBanner 0.8s ease forwards;
+}
+
+/* ANIMAÇÃO */
+@keyframes fadeUpBanner {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* OVERLAY */
+.banner-overlay {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+  background: linear-gradient(
+    to right,
+    rgba(245, 245, 243, 0.95) 35%,
+    rgba(245, 245, 243, 0.6) 55%,
+    transparent 80%
+  );
+}
+
+/* CONTEÚDO */
+.banner-content {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  padding-right: 600px; /* 👈 CORRETO (substitui o 800px) */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+
+  /* animação delay */
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeTextBanner 0.8s ease 0.3s forwards;
+}
+
+/* TEXTO */
+.banner-content h1 {
+  font-size: 42px;
+  font-weight: 600;
+  color: #3f6b3f;
+  line-height: 1.2;
+}
+
+.banner-content span {
+  color: #2e2e2e;
+}
+
+.banner-content p {
+  margin-top: 15px;
+  color: #6d6d6d;
+  max-width: 420px;
+  line-height: 1.6;
+}
+
+/* BOTÃO */
+.banner-content button {
+  margin-top: 25px;
+  background: linear-gradient(135deg, #3f6b3f, #5a8a5a);
+  color: white;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+  box-shadow: 0 8px 20px rgba(63, 107, 63, 0.2);
+}
+
+.banner-content button:hover {
+  background: linear-gradient(135deg, #2f4f2f, #3f6b3f);
+  transform: translateY(-2px);
+}
+
+/* ANIMAÇÃO TEXTO */
+@keyframes fadeTextBanner {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===================== RESPONSIVO ===================== */
+
+/* TABLET */
+@media (max-width: 900px) {
+  .banner {
+    height: 400px;
+  }
+
+  .banner-content {
+    padding-left: 40px;
+  }
+
+  .banner-content h1 {
+    font-size: 30px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .banner {
+    height: 350px;
+  }
+
+  .banner-content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .banner-content h1 {
+    font-size: 24px;
+  }
+
+  .banner-content p {
+    font-size: 14px;
+    max-width: 100%;
+  }
+
+  .banner-content button {
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -1,0 +1,137 @@
+.footer {
+  background: #2f4f2f;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 60px;
+  font-family: 'Poppins', sans-serif;
+
+  /* animação de entrada */
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUpFooter 1s ease forwards;
+}
+
+/* ===================== ANIMAÇÃO ===================== */
+
+@keyframes fadeUpFooter {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* COLUNAS */
+.footer-left {
+  max-width: 250px;
+}
+
+.footer-left h2 {
+  margin-bottom: 10px;
+}
+
+.footer-left p {
+  font-size: 13px;
+  color: #cfcfcf;
+}
+
+/* NAV */
+.footer-center {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-center a {
+  color: #cfcfcf;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+/* hover links */
+.footer-center a:hover {
+  color: white;
+  transform: translateX(5px);
+}
+
+/* INPUT */
+.footer-right {
+  display: flex;
+  align-items: center;
+}
+
+.footer-right input {
+  padding: 10px;
+  border: none;
+  border-radius: 20px 0 0 20px;
+  outline: none;
+}
+
+/* BOTÃO */
+.footer-right button {
+  padding: 10px 15px;
+  border: none;
+  background: #3f6b3f;
+  color: white;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* hover botão */
+.footer-right button:hover {
+  background: #2f4f2f;
+  transform: scale(1.05);
+}
+
+/* ===================== RESPONSIVO ===================== */
+
+/* TABLET */
+@media (max-width: 900px) {
+  .footer {
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 40px 30px;
+  }
+
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    flex: 1 1 45%;
+  }
+
+  .footer-right {
+    justify-content: flex-start;
+  }
+}
+
+/* CELULAR */
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+    padding: 30px 20px;
+  }
+
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .footer-right {
+    justify-content: center;
+  }
+
+  .footer-right input {
+    width: 70%;
+  }
+
+  .footer-right button {
+    width: auto;
+  }
+}
