@@ -7,7 +7,8 @@ const Header = () => {
 
       <div className="header-container">
 
-        {/* LOGO */}
+       
+       
         <Link to="/" className="logo">
           nutre <span>care</span>
         </Link>
