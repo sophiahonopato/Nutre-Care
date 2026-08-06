@@ -1,20 +1,56 @@
-# React + Vite
+# 🌿 Nutre Care
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> **Beleza consciente, inovação e sustentabilidade em uma experiência digital moderna.**
 
-Currently, two official plugins are available:
+## 🌱 Sobre o projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**Nutre Care** é um projeto fictício desenvolvido para apresentar uma marca de **maquiagens ecológicas**, destacando produtos que unem beleza, sustentabilidade e responsabilidade ambiental.
 
-## React Compiler
+A aplicação foi criada com foco em uma experiência intuitiva e agradável, utilizando uma identidade visual inspirada na natureza para transmitir os valores da marca e incentivar um consumo mais consciente.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Tecnologias utilizadas
 
-## Expanding the ESLint configuration
+<div align="left">
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# Nutre-Care
-# Nutre-Care
-# nutrecare
-# nutrecare
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge\&logo=react\&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge\&logo=vite\&logoColor=FFD62E)
+![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge\&logo=javascript\&logoColor=F7DF1E)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge\&logo=html5\&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge\&logo=css3\&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge\&logo=git\&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge\&logo=github\&logoColor=white)
+
+</div>
+
+## ✨ Funcionalidades
+
+* 💄 Apresentação de uma linha de maquiagens ecológicas
+* 🌿 Identidade visual inspirada na sustentabilidade
+* 📱 Interface responsiva para diferentes dispositivos
+* 🎨 Design moderno e minimalista
+* ⚡ Navegação intuitiva e organizada
+
+## 🎯 Objetivo
+
+Desenvolver uma landing page para uma marca fictícia de cosméticos sustentáveis, aplicando conceitos de desenvolvimento front-end, design responsivo e experiência do usuário, além de reforçar a importância do consumo consciente e da preservação ambiental.
+
+## 📚 Aprendizados
+
+Durante o desenvolvimento foram praticados conceitos como:
+
+* Componentização com React
+* Estruturação de aplicações com Vite
+* Design responsivo
+* Organização de interfaces
+* Versionamento com Git e GitHub
+* Princípios de UI/UX e identidade visual
+
+---
+
+<div align="center">
+
+### 🌎 Porque a verdadeira beleza também cuida do planeta.
+
+**Desenvolvido com 💚 por Sophia Honorato.**
+
+</div>
